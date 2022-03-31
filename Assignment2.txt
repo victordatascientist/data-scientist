@@ -1,0 +1,124 @@
+1.What is cloud computing? What is Azure?
+cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale. You typically pay only for cloud services you use, helping lower your operating costs, run your infrastructure more efficiently and scale as your business needs change.
+The Azure cloud platform is more than 200 products and cloud services designed to help you bring new solutions to life—to solve today’s challenges and create the future. Build, run and manage applications across multiple clouds, on-premises and at the edge, with the tools and frameworks of your choice.
+
+2.How to create an Azure account list the steps and requirements?
+1. Go to the Azure Home Page.
+
+2. Click on Free Azure Account on the top right corner.
+3. Click on Start Free.
+4. Sign-in/Sign-up for a Microsoft account using an email address and password.
+5. Enter your Country/Region and Date of Birth and click next.
+
+6. Enter the verification code received on the email address and click next.
+
+7. Type the captcha you see on your screen and click on next.
+
+Also Check: Our blog post on Azure Core Services.
+
+8. You’ll be redirected to the Azure Sign-up page. Enter your Region, Name, Phone number, Email address. Note: You should use the same email address for Azure sign-up and for the Microsoft account.
+
+9. Verify your phone number by clicking Text Me or Call Me and enter the verification code received.
+Also Check: Our blog post on Azure Managed Services. 
+
+10. Enter the payment details. Make sure you have a Master Card/American Express/ Visa Credit card and international payments should be enabled
+11. Check the Terms and Conditions and click Sign-up.
+12. You have successfully created a Microsoft Azure free account and now have a lumpsum balance of $200.
+
+13. Click on Portal on the top right corner of the screen. You’ll be redirected to the Azure portal.
+
+Also Check: What is the difference between Data Science VS Data Analytics. 
+
+14. If you have exhausted your free credit then you have to move to the Pay as you go subscription policy.
+
+if you have crossed the limit or time limit then you will get “your subscription is disabled and cannot perform operations  until its re-enabled”
+
+3.Describe different types of cloud models.
+1. Infrastructure as a Service (IaaS)
+This the most commonly used cloud computing service model owing to its structural support that includes virtual servers, operating systems, network, and data storage drives. The IaaS model caters to the businesses’ basic need for scalability, flexibility, and reliability vis-a-vis the cloud, as well as obliterates the need for maintaining hardware in the office space. It is a completely outsourced service that operates on a pay-for-use model and is available in private, public, and hybrid infrastructure formats.
+
+2. Platform as a Service (PaaS)
+This cloud computing model deploys software and infrastructure framework offered by the cloud service providers with room for businesses to develop and run applications of their own as well. PaaS clouds are developed within IaaS clouds in many cases by specialists with a view of scaling the process of application deployment, making the users’ expenses highly predictable. With PaaS, web applications can be developed with ease and in a time efficient manner, and the cloud service carries the requisite robustness and flexibility to support the process.
+
+3. Software as a Service (SaaS)
+SaaS is relatively knowledgeable service, and the use of the term predated cloud computing. In this service model, applications leverage the cloud for software architecture, thus, cutting back significantly on burdens of operations, support, and maintenance. This is made possible by running applications on vendor computer as opposed to that of the user. This service makes software available to various users over the internet who, then pay for it either by signing up for a subscription or via a pay-per-use mode
+
+4.Describe different cloud services.
+IaaS is also known as Hardware as a Service (HaaS). It is a computing infrastructure managed over the internet. The main advantage of using IaaS is that it helps users to avoid the cost and complexity of purchasing and managing the physical servers.
+1. Resources are available as a service
+2. Services are highly scalable
+3. Dynamic and flexible
+4. GUI and API-based access
+
+Platform as a Service (PaaS)
+PaaS cloud computing platform is created for the programmer to develop, test, run, and manage the applications.
+There are the following characteristics of PaaS -
+
+1. Accessible to various users via the same development application.
+2. Integrates with web services and databases.
+3. Builds on virtualization technology, so resources can easily be scaled up or down as per the organization's need.
+4. Support multiple languages and frameworks.
+
+Software as a Service (SaaS)
+SaaS is also known as "on-demand software". It is a software in which the applications are hosted by a cloud service provider. Users can access these applications with the help of internet connection and web browser.
+
+There are the following characteristics of SaaS -
+
+1. Managed from a central location
+2. Hosted on a remote server
+3. Accessible over the internet
+
+5. What are some cloud computing advantages?
+Benefits of cloud computing
+Cloud computing offers your business many benefits. It allows you to set up what is essentially a virtual office to give you the flexibility of connecting to your business anywhere, any time. With the growing number of web-enabled devices used in today's business environment (e.g. smartphones, tablets), access to your data is even easier.
+
+There are many benefits to moving your business to the cloud:
+
+Reduced IT costs
+Moving to cloud computing may reduce the cost of managing and maintaining your IT systems. Rather than purchasing expensive systems and equipment for your business, you can reduce your costs by using the resources of your cloud computing service provider. You may be able to reduce your operating costs because:
+
+the cost of system upgrades, new hardware and software may be included in your contract
+you no longer need to pay wages for expert staff
+your energy consumption costs may be reduced
+there are fewer time delays.
+Scalability
+Your business can scale up or scale down your operation and storage needs quickly to suit your situation, allowing flexibility as your needs change. Rather than purchasing and installing expensive upgrades yourself, your cloud computer service provider can handle this for you. Using the cloud frees up your time so you can get on with running your business.
+
+Business continuity
+Protecting your data and systems is an important part of business continuity planning. Whether you experience a natural disaster, power failure or other crisis, having your data stored in the cloud ensures it is backed up and protected in a secure and safe location. Being able to access your data again quickly allows you to conduct business as usual, minimising any downtime and loss of productivity.
+
+Collaboration efficiency
+Collaboration in a cloud environment gives your business the ability to communicate and share more easily outside of the traditional methods. If you are working on a project across different locations, you could use cloud computing to give employees, contractors and third parties access to the same files. You could also choose a cloud computing model that makes it easy for you to share your records with your advisers (e.g. a quick and secure way to share accounting records with your accountant or financial adviser).
+
+Flexibility of work practices
+Cloud computing allows employees to be more flexible in their work practices. For example, you have the ability to access data from home, on holiday, or via the commute to and from work (providing you have an internet connection). If you need access to your data while you are off-site, you can connect to your virtual office, quickly and easily.
+
+Access to automatic updates
+Access to automatic updates for your IT requirements may be included in your service fee. Depending on your cloud computing service provider, your system will regularly be updated with the latest technology. This could include up-to-date versions of software, as well as upgrades to servers and computer processing power.
+
+5.Differentiate Capital expenses vs. operating expenses
+What Are Capital Expenses?
+A capital expenditure (CapEx) occurs when a company spends money, utilizes collateral, or incurs debt to purchase a new asset or enhance value to an existing one. These are often one-time expenses. 
+
+Examples of CapEx include:
+
+1. Purchasing office space or machinery
+2. Major upgrades to existing facilities
+3. Filing patents
+4. Buying company vehicles 
+
+What Are Operating Expenses?
+An operating expenditure (OpEx) is a daily cost required to keep the business operational. Typically, these are recurring, short-term expenses. 
+
+Examples of operating expenses include:
+
+Employee wages
+Rent
+Insurance
+Supplies
+Legal fees
+Minor repairs
+Taxes
+Travel
+Utilities
+

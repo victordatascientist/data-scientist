@@ -1,0 +1,151 @@
+1.List Features and benefits of ExpressRoute
+ExpressRoute offers a variety of advanced networking functionalities to expand your on-premises networks in the Microsoft cloud. Some of the core features of Azure ExpressRoute include. 
+
+ 
+
+Layer 3 Connectivity 
+Azure ExpressRoute is using the BGP dynamic routing protocol to exchange routes between your on-premises network, your instances in Azure and public Microsoft IP addresses. Different traffic profiles use multiple BGP sessions. 
+
+ 
+
+Redundancy 
+An ExpressRoute circuit always has two connections to two Microsoft Enterprise edge routers (MSEEs) at an ExpressRoute Location. Connectivity providers employ redundant devices to ensure redundancy of your connections to Microsoft. You must have a redundant Layer 3 connectivity configuration to make sure Microsoft’s Service Level Agreement (SLA) is valid. 
+
+ 
+
+Connectivity 
+Azure ExpressRoute offers rich connectivity options for both your on-premises networks and regional and global Microsoft cloud-based networks. With a valid Azure account and if all requirements are met, you can have connections to the Microsoft Azure and Microsoft 365 services.
+
+These services in turn enable you to benefit from the following connectivity options:
+
+ 
+
+Access Regions within a Geopolitical Region 
+
+When you connect to Microsoft in one of their peering locations, you get immediate access to regions within the respective geopolitical region. 
+
+What it means is that if you connect in Milan, you will have access to all cloud services hosted across Northern and Western Europe. 
+
+ 
+
+Premium Global Connectivity 
+
+If you need to have access to service outside the boundaries of a geopolitical region, you can activate ExpressRoute Premium to get extend connectivity. 
+
+This service tier enables you to access all Microsoft cloud services hosted in all regions all over the world. 
+
+ 
+
+Local Connectivity 
+
+A feature called Local SKU enables you to transfer your data to an ExpressRoute location near an Azure region you select. Thus, you get cost efficiency while data transfer is included in the ExpressRoute port fees. 
+
+ 
+
+On-premises Connectivity 
+
+With ExpressRoute Global Reach, you can exchange data across your on-premises sites. ExpressRoute Global Reach enables you to connect confidential data centers through your ExpressRoute circuits while the cross-data-center traffic will pass through Microsoft's network. 
+
+ 
+
+National Clouds 
+
+You can connect to an isolated cloud environment, which operates in a specific geopolitical region or customer segment. 
+
+ 
+
+ExpressRoute Direct 
+
+With ExpressRoute Direct, you can benefit from direct connections to Microsoft’s global network at peering locations across the world. ExpressRoute Direct supports dual 100-Gbps connectivity, which enables for Active/Active connectivity at scale. 
+
+ 
+
+ExpressRoute Pricing and Billing 
+Azure ExpressRoute offers three billing models designed to fit the needs of different organizations and use case scenarios. 
+
+Unlimited data. 
+You pay a monthly fee while all inbound and outbound data transfer is free of charge. 
+Metered data. 
+You pay a monthly fee and all inbound data transfer is free of charge. You are charged per GB of outbound data transfer while rates vary by region. 
+ExpressRoute premium add-on.
+
+2.Explain Azure storage account, disc storage and blob storage.
+Disk Storage
+Microsoft Azure Disk Storage is based on Page Blobs. It is a service that allows you to create disks for your virtual machines. A disk created in Disk Storage can be accessed from only one virtual machine. In other words - it is your local drive. Yes, it’s that simple.
+
+Here you can have two options for the speed of your disks:
+
+HDDs that are cheap but slow and called standard storage.
+SSDs that are fast but expensive and called premium storage.
+And two options for disk management:
+
+Unmanaged disk - you should manage the disk storage and corresponding account yourself
+Managed disk - Azure does everything for you. You need to select only the size of the disk and the desired type - standard or premium
+
+File Storage
+Microsoft Azure File storage is the second storage type that was designed to support the needs of the Azure VM environment. That storage is, in essence, a network share. You can store files there that can be accessed from different Virtual Machines. It is similar to Amazon EFS its direct competitor.
+
+Again, quite simple. (Though the naming could be a bit clearer.)
+
+Redundancy
+Okay, now you are done with choosing the type of storage for your needs. However, in the IT world, the safety of your data is amongst the most essential and basic things. When you store data in Microsoft Azure, regardless of the type of storage, it is stored somewhere in the datacenters of Microsoft.
+
+However, what if one day you wake up and read the news about the devastating accident that has completely destroyed the data center in question? Kind of a nightmare really.
+
+Blob Storage account is designed to work with Block Blobs and Append Blobs. Page Blobs, however, can only be created when you are using a General-Purpose account.
+
+Why?
+
+One of the distinctive features of Block and Append Blobs is their ability to be in Hot, Cool, or Archive tiers as they are files. As Page Blobs were designed to be disks, they cannot be put into Cool or Archive tiers.
+
+Microsoft Azure Storage and MSP360 Products
+We in MSP360 are working to bring support for each and every cloud storage on the market, bringing you more versatile for backup and storage of your files.
+
+Backup to Microsoft Azure Blob
+When you create a backup plan in MSP360 Backup, the first thing you have to do is to indicate the cloud storage of your choice. Microsoft Azure Blob is fully supported and ready for action.
+
+Restore from Block Blob to Azure VM
+Aside from backups, MSP360 Backup enables you to restore your image-based backups to Azure VM. The data can be fetched from any cloud storage service, including Azure Block Blob.
+
+3.List and describe database services that are available on Microsoft Azure
+1. Azure Database Migration Service
+It is a fully managed service that is used for seamless migration from various database sources and on-premise SQL servers to the Azure data platform with fewer user interactions and optimized time with online integration. This service is also used for different existing Azure tools and services to give customers high availability. This service has a premium pricing tier based on this managed instance.
+
+2. SQL Server Stretch Database Service
+Azure uses the Stretch database to migrate the cold or infrequently accessed data to Azure cloud, It is used to replicate data transparently and securely to the cloud. Stretch database is cost-effective to transfer data and does not require many changes to queries or application whether data is stretched to the cloud or is on on-premise machines. If some data is stored in the specific tables then the user can migrate the entire table and also it has a filter condition based on data the user can filter out hot and cold data and migrate selected rows only.
+
+3. SQL Data Sync Service
+It is based on the sync group and SQL data sync service is built on Azure SQL database service and can be used to synchronize the data bi-directionally across various databases both in the cloud or the on-premise machines. To synchronize the data it uses the hub and spoke topology and hub database is always an Azure SQL database.
+
+4. Azure Data Factory Service
+Data factory service is a managed ETL (Extract Transform Load) cloud service and integration service. used for extracting the required data and performing the transformation on the data to analyze the logs for data and get more insight into the data.  Using data factory users can create data-driven ETL pipelines for data movement and transform data at scale.
+5. Azure Cosmos Database
+It is a NoSQL database used to store structure, unstructured or semi-structured data to the azure. Azure Cosmos database is highly available (99.999% available) and dynamically scalable and has very low latency while loading and fetching the data. Cosmos database helps to handle the real-time data with large changes managed by big data technology.  It is a globally distributed and multi-modal database and users can enable the cosmos database service using a single button and store data across worldwide regions. It is a NoSQL database hence it does not have schema and index management as the database engine handles the schema inbuilt and hence no application downtime as cosmos db automatically indexes the data. It has in-built security and all data is encrypted by default.
+
+6. Azure Active Directory
+It is used to secure all the services provided as part of database service and also integrate all these services. It manages all the users’ Identity and access to the various services.
+
+4.What is the Azure security center? 
+Microsoft Azure Security Center is a set of tools for monitoring and managing the security of virtual machines and other cloud computing resources within the Microsoft Azure public cloud.
+
+Administrators access the Azure Security Center through the Azure management portal. Within the Security Center, they can find a number of security tools intended to prevent, detect and respond to potential security threats to their Azure deployment. Organizations must have an Azure subscription to access the Security Center.
+
+The main features of Azure Security Center include:
+
+Policy configuration -- allows admins to establish a set of security-related controls for a specific Azure subscription or resource group. An Azure resource group refers to the collection of Azure resources, such as a VM, storage, database or virtual network, required to run an application.
+Data collection -- gathers data about Azure resources to ensure policies are enforced. The service also enables daily scanning of VMs for potential security threats. Admins can choose the Azure storage account in which collected VM data is stored.
+Recommendations -- provides a list of suggestions for creating Azure security policies based on the security needs of your specific Azure resources. Potential recommendations include deploying a missing system update, provisioning antimalware and using network security groups to control VM traffic.
+Alerts -- issues an alert when potential security threats, such as compromised VMs or malware, are detected. Azure Security Center automatically collects and integrates log data about Azure resources to produce alerts.
+Azure Security Center can also integrate with Power BI, Microsoft's business intelligence cloud service for data analysis and visualization. An admin, for example, could use the Azure Security Center dashboard to access Power BI reports, or use the Power BI dashboard to filter security recommendations and alerts.
+
+4. How to detect and respond to security in Azure
+Attacks and exploits are continuing with millions of attacks per hour and attributed to nation-backed as well as opportunistic hackers. And, a range of new attacks are emerging, from the primary attack on vulnerable Log4J servers to bitcoin mining and attacks on end-users. 
+The situation is far from solved with flaws found in the initial Log4J fixes and new severity 10 CVEs announced. 
+Finding and patching vulnerable systems is taking more time as organizations have these deployed in everything from production and compliant systems which might be easy to track down, while connected low priority systems, including dev and test systems, become vectors for lateral (east-west) movement. Also, patching is often not simple as teams have to factor in application compatibility and subsequent dependencies, maintenance windows, and application uptime. Finally, there may be further patch updates to roll out. 
+Speed of deploying active protections matters when there are 10s and 100s of affected applications in 100s of VPCs and cloud accounts across multiple clouds to deal with. A security solution that provides continuous cloud visibility and automated virtual patching of Log4J is crucial. If the security solution itself takes multiple days and many people with skills across networking, security, cloud, and automation then it has failed in the job of helping protect you. 
+Getting visibility and disrupting the entire kill chain is essential and not a nice to have. So far almost all security tools have primarily focussed on the inbound protections with single-point products. A more essential necessity and requirement is to layer both WAF and IPS with SSL/TLS decryption so that the attacks are actually inspected. And, it is imperative to protect with allow lists for known good sites (FQDN and IP) for outbound traffic, and automatically block all malicious site categories and IPs. 
+
+6.What is the Azure key vault? Write its features and advantages.
+Azure Key Vault is a cloud service for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys. Key Vault service supports two types of containers: vaults and managed hardware security module(HSM) pools
+
+Centralizing storage of application secrets in Azure Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked. When using Key Vault, application developers no longer need to store security information in their application

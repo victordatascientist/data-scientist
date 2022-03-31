@@ -1,0 +1,77 @@
+1. What is the Azure firewall? How to use the Azure firewall?
+Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability
+
+Azure Firewall is a fully managed service that can filter and analyze the traffic of layers 3, 4, and 7 of the OSI model. Azure firewall service eliminates the need for Load Balancer and ensures 99.99% availability for two configured zones
+
+2.Differentiate authentication and authorization?
+Both Authentication and Authorization area unit utilized in respect of knowledge security that permits the safety on an automatic data system. Each area unit terribly crucial topics usually related to the online as key items of its service infrastructure. However, each the terms area unit terribly completely different with altogether different ideas. whereas it’s true that they’re usually employed in an equivalent context with an equivalent tool, they’re utterly distinct from one another.
+
+In authentication process, the identity of users are checked for providing the access to the system. While in authorization process, person’s or user’s authorities are checked for accessing the resources. Authentication is done before the authorization process, whereas authorization process is done after the authentication process.
+
+2. What is Azure Active Directory?
+Azure Active Directory Domain Services (Azure AD DS) provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication. You use these domain services without the need to deploy, manage, and patch domain controllers (DCs) in the cloud
+
+3.What are multifactor authentication and conditional access available in Azure?
+Conditional Access policies at their simplest are if-then statements, if a user wants to access a resource, then they must complete an action. Example: A payroll manager wants to access the payroll application and is required to do multi-factor authentication to access it.
+
+Administrators are faced with two primary goals:
+
+Empower users to be productive wherever and whenever
+Protect the organization's assets
+Use Conditional Access policies to apply the right access controls when needed to keep your organization secure.
+
+Common signals
+Common signals that Conditional Access can take in to account when making a policy decision include the following signals:
+
+User or group membership
+Policies can be targeted to specific users and groups giving administrators fine-grained control over access.
+IP Location information
+Organizations can create trusted IP address ranges that can be used when making policy decisions.
+Administrators can specify entire countries/regions IP ranges to block or allow traffic from.
+
+Common decisions
+Block access
+Most restrictive decision
+Grant access
+Least restrictive decision, can still require one or more of the following options:
+Require multi-factor authentication
+Require device to be marked as compliant
+Require Hybrid Azure AD joined device
+
+Commonly applied policies
+Many organizations have common access concerns that Conditional Access policies can help with such as:
+
+Requiring multi-factor authentication for users with administrative roles
+Requiring multi-factor authentication for Azure management tasks
+Blocking sign-ins for users attempting to use legacy authentication protocols
+Requiring trusted locations for Azure AD Multi-Factor Authentication registration
+
+3.What is resource lock? Describe why resource lock should be used?
+Prevention is better than Cure – There were quite a few instances when I thought I should have applied this logic and this has even more significance if you are playing around public cloud more so while dealing with mission critical resources there. There are numerous occasions when you want to protect your resources from some unwarranted human actions or to put it bluntly we are seeking a solution to prevent other users in organization from accidentally deleting or modifying critical resources.
+
+Azure has given us couple of ways to apply that level of control, firstly with role-based access control (RBAC), With the Reader and various Contributor roles RBAC is a great way to help protect resources in Azure. You can effectively limit the actions that a user can take against a resource. However, even with one of the Contributor roles, it is still possible to delete specific resources. This makes it very easy to accidentally delete an item.
+
+Azure Lock provides you the options using which you can effetely control any such adventure. Unlike RBACK, you use management locks to apply a restriction across all users and roles. To learn about setting permissions for users and roles, see Azure Role-based Access Control. Using Resource lock you can lock a particular subscription, a particular resource group or even a specific resource. With this in place authorize users can still be able to read or modify the resources but they CAN NOT breach that lock and delete the same.
+
+To make this happen you have to apply the Resource Lock Level to aforementioned scopes. You can set the lock level toCanNotDelete or ReadOnly(As of now these two are the only options supported). CanNotDelete means authorized users can still read and modify a resource, but they can’t delete it. ReadOnly means authorized users can only read from a resource, but they can’t modify or delete it.
+
+4.What is Azure policy? Write it Usage.
+Azure Policy is a free Azure service that allows you to create policies, assign them to resources, and receive alerts or take action in cases of non-compliance with these policies. 
+
+Azure Policy allows you to ensure that all resources are configured with required services, and will tell you when systems are out of compliance. So if you want all of your resources to be configured with Azure Backups, for example, it will either alert you when a VM doesn’t have Azure Backups configured or can automatically configure Azure Backups on that VM. 
+
+Azure Policy is used by 100% of Azure’s top 300 enterprise users and is a critical part of any mature Azure deployment. As part of a broad Azure governance practice, Azure Policy ensures that people beyond your central IT team (i.e. developers and LOB teams) can still have access to cloud resources, and can launch resources on demand, without sacrificing security and compliance.
+
+The basic building blocks of Azure Policy are:
+
+Policy definition: Describes resource compliance and what effect to take when resource in non-compliant. (JSON)
+Example: Restrict the list of locations where users can deploy resources.
+Initiative: A collection of policy definitions that all contribute towards one overarching goal.
+Example: All policies that relate to billing can be grouped in one initiative. 
+Policy or initiative assignment: Describes where the policy is applied. Can be a resource group or subscription.
+Example: The policy to limit the list of locations where users can deploy resources is applied only to the finance team’s resource group, and not to the Dev team’s resource group. 
+
+5.What is the Azure government? What is Azure China 21Vianet?
+What is Azure Government? Azure Government is the mission-critical cloud, delivering breakthrough innovation to US government customers and their partners. Only US federal, state, local, and tribal governments and their partners have access to this dedicated instance, with operations controlled by screened US citizens
+
+As with the previous China regions, the Azure in China is a separate service sold and operated by 21Vianet, and in an independent, dedicated network within China and designed to serve businesses operating within the country

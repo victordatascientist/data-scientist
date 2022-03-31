@@ -1,0 +1,71 @@
+1.What is Azure App Service and when to opt for Azure App Service?
+Azure App Service lets you create apps faster with a one-of-a kind cloud service to quickly and easily create enterprise-ready web and mobile apps for any platform or device and deploy them on a scalable and reliable cloud infrastructure.
+
+
+An Azure function is triggered by an external event or a timer. It then executes the code of the function. When hosted on a consumption plan this execution is allowed to run for 5 or 10 minutes max. When you need a longer execution time you need to run it on an App Service
+
+2.Differentiate Azure Container Instances and Azure Kubernetes Service
+Azure Container Instances (ACI) offers an easy way to run containers in the Azure cloud, eliminating the need to manage virtual machines (VMs) or using more complex container orchestration services. ACI is based on a serverless model (like the comparable AWS service, Amazon Fargate). It starts containers in the Azure cloud in seconds. It is ideal for simple container-based workloads like smaller-scale apps, build jobs, and task automation. While ACI does not require the use of Kubernetes or other orchestrators, it does support them, and can be used together with plain Kubernetes or Azure Kubernetes Service.
+
+Azure Kubernetes Service (AKS) simplifies the deployment of managed Kubernetes in Azure. AKS handles most of the complexity and operational tasks related to managing Kubernetes—including tasks like health monitoring, upgrades, and networking. AKS manages Kubernetes master nodes, while customers manage and maintain agent nodes. AKS is a free managed service. Customers are only required to pay for agent nodes used by the clusters. There is no need to pay for any of the masters, which are configured and deployed by AKS.
+
+3. What is the Azure function? Explain in brief.
+
+Azure functions is a serverless concept of cloud native design that allows a piece of code deployed and execute without any need of server infrastructure, web server, or any configurations. Azure functions can be written in multiple languages such as C#, Java, JavaScript, TypeScript, and Python.
+ 
+This article explains what an azure functions is, how to create an azure functions, and how to debug, test, and deploy azure functions.
+ 
+Azure functions are scalable. When demand of execution increases, more resources are allocated automatically to the service and when requests fall, all extra resources and application instances drop off automatically.
+
+Why use Azure Functions
+ 
+Here are some of the reasons why you should use azure functions. 
+Azure functions are lightweight and serverless.
+Azure functions are easier to write and deploy.
+Azure functions are fast to execute because there is no large application, startup time, initialization, and other events fired before the code is executed.
+Azure functions’ execution is triggered when an event is fired.
+
+4.What is Azure Virtual Desktop?
+A virtual desktop is a full desktop that runs on a remote server. This enables you to securely access work applications and data from wherever you are and on any device. It expands the possibilities beyond the physical desktop screen in the office. 
+
+Azure VD is a desktop app and visualization service that runs on the cloud. It provides all the benefits you might expect from a virtual desktop while offering the same tools and resources your employees already use. 
+
+Benefits of a virtual desktop
+You may be wondering: How do I determine if my organization will benefit from a virtual desktop solution? If all of your staff have work laptops and you can secure and manage their access to the information and applications they need, using a virtual desktop may not be necessary for your organization.
+
+5.What is Azure virtual networking? Explain in detail.
+Azure Virtual Network
+The Azure Virtual Network is a logical representation of the network in the cloud. So, by creating an Azure Virtual Network, we can define our private IP address range on Azure, and also deploy different kinds of Azure resources. For Example - Azure virtual machine, App service environment, Integration service environment, etc.
+
+Azure Vnet Capabilities
+Following are the capabilities of the Azure Vnet:
+
+Isolation and segmentation: To deploy resources such as virtual machines into virtual networks, they will be isolated from other resources. By putting the virtual machine into your virtual network, it cannot be reached from the Internet or other Azure resources unless we enable communication in between. We can also use subnets within virtual networks to further segment our resources within the network.
+
+Communication with the Internet: All resources in a virtual network can communicate outbound to the Internet by default. But it needs to establish an inbound connection from the Internet. We can either use public IP or load balancers.
+
+Communication between resources: Communication between the number of resources inside the virtual network or with other resources through service endpoints.
+
+Communication with on-premises resources: By establishing either point to site VPN or site to site VPN or Express route, your workloads within Azure virtual network can seamlessly communicate with workloads within our on-premises data center.
+
+There are lots of capabilities within the Azure virtual network that we can use to control the traffic.
+
+Filter network traffic: We can use Network Security Groups, Application Security Group, Azure firewall, or third-party network virtual appliance to filter the traffic coming to the resources in the virtual network.
+
+Route network traffic: We can route the network traffic using the routing tables, we can configure user-defined routes to route all the outbound traffic, let's say via a firewall.
+
+Monitor network traffic: By network security groups and traffic analytics monitoring solution, you'll be able to carry out extensive monitoring on both inbound and outbound communications.
+
+6.Explain Azure VPN gateway.
+Azure VPN Gateway is a cloud based network gateway that enables in connecting on-premises networks  with Azure using site-to-site VPNs.  Azure VPN Gateway provides secure connectivity by using industry standard protocols, IPsec and IKE to secure the connection.  In order to build the connection, Azure requires using its preferred gateway devices vendors for establishing a site to site connection. It can also be used to establish connection between virtual networks i.e. VNet to VNet. and it provides two different types of gateways;
+
+Static Routing –  Delivers policy based VPN connectivity and routing
+
+Dynamic Routing – Provides route based VPN connectivity and routing
+
+How is Azure VPN Gateway used?
+It enables organizations to;
+
+Create a site to site VPN connection between on premises IT Infrastructure or from any location with Azure hosted resources
+Create secure VPN connections with on premises and Azure
+Connect on premises servers with virtual machines, SQL Azure or other Azure Cloud resources.

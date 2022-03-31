@@ -1,0 +1,34 @@
+1. What is serverless computing?
+Serverless computing is a method of providing backend services on an as-used basis. A serverless provider allows users to write and deploy code without the hassle of worrying about the underlying infrastructure.
+
+Explain Azure subscriptions, management groups and resources
+An Azure subscription links to an Azure account, which in turn is an identity in Azure Active Directory (AD). Hence, a subscription is an agreement between an organization and Microsoft to use resources, for which charges are either paid on a per-license basis or a cloud-based, resource-consumption basis.
+Management groups provide a governance scope above subscriptions. You organize subscriptions into management groups the governance conditions you apply cascade by inheritence to all associated subscriptions.
+
+3. Explain Azure regions, availability zones, and region pairs.
+An azure region is made up of one or more datacenters. If availability zones are enabled, an azure region contains a minimum of three availability zones. An Availability Zone is made up of one or more datacenters. So the point is, an Azure region contains one or more datacenters or 3 or more availability zones if enabled.
+Azure regions and availability zones are physically separate locations within each Azure region that are tolerant to datacenter failures because of redundant infrastructure and logical isolation of Azure services
+         An Azure Region Pair is a relationship between 2 Azure Regions within the same geographic region for disaster recovery purposes. If one of the regions were to experience a disaster or failure, then the services in that region will automatically failover to that regions secondary region in the pair.
+
+4.Explain Azure Resource Manager, Azure subscription and management group.
+Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account. You use management features, like access control, locks, and tags, to secure and organize your resources after deployment
+Management Groups contain one or more subscriptions. Inside of Subscriptions are Resource Groups. Resource Groups belong to exactly one Subscription. A Subscription can have many resource groups, but a resource group may belong to only one subscription
+
+5.Provide overview of Azure Compute Services.
+
+Azure compute services are the hosting services responsible for hosting and running the application workloads. These include Azure Virtual Machines (VMs), Azure Container Service, Azure App Services, Azure Batch, and Azure ServiceFabric
+CPU
+The central processing unit (CPU) is the brain of any computer. CPU is measured in units called millicores. Application developers can specify how many allocated CPUs are required for running their application and to process data.
+Memory
+Memory is measured in bytes. Applications can make memory requests that are needed to run efficiently.
+
+If applications are running on a single physical device, they have limited access to the compute resources of that device. But if applications run on the cloud, they can simultaneously access more processing resources from many physical devices. Let’s take a closer look at this.
+
+6.What is an Azure virtual machine and when to opt for an Azure virtual machine
+Azure Virtual Machines (VM) is one of several types of on-demand, scalable computing resources that Azure offers. Typically, you choose a VM when you need more control over the computing environment than the other choices offer. This article gives you information about what you should consider before you create a VM, how you create it, and how you manage it.
+
+An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs it. However, you still need to maintain the VM by performing tasks, such as configuring, patching, and installing the software that runs on it.
+
+Development and test – Azure VMs offer a quick and easy way to create a computer with specific configurations required to code and test an application.
+Applications in the cloud – Because demand for your application can fluctuate, it might make economic sense to run it on a VM in Azure. You pay for extra VMs when you need them and shut them down when you don’t.
+Extended datacenter – Virtual machines in an Azure virtual network can easily be connected to your organization’s network.
